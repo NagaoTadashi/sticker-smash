@@ -29,7 +29,6 @@ export default function Index() {
   const imageRef = useRef<View>(null);
 
   useEffect(() => {
-    console.log(!permissionResponse?.granted)
     if (!permissionResponse?.granted) {
       requestPermission();
     }
